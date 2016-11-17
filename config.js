@@ -15,7 +15,7 @@ app.listen(4242,function(){
 //asignar la ruta donde debe estar el bodyparser
 app.use(bodyParser.urlencoded({estend: true}));
 //en todas las direcciones invoque el metodo rut
-app.use('/receta',routesReceta);
+app.use('/',routesReceta);
 app.use('/recetaProductos',routesRecetaProductos);
 
 
