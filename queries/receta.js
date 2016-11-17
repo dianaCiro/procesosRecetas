@@ -20,7 +20,9 @@ function getAllReceta(req, res, next){
 	.then(function(data){
 		res.status(200)//mandar esa informacion en archivo json
 		.json({
+			
 			data: data
+		});
 
 	})
 	.catch(function(err){
@@ -37,6 +39,7 @@ function createReceta(req, res, next){
 	.then(function(data){
 	res.status(200)
 	.json({
+		
 		data: data
 	});
 	})
@@ -53,6 +56,7 @@ function removeReceta(req, res, next){
 	.then(function(){
 	res.status(200)
 	.json({
+		
 		data: data
 	});
 	})
