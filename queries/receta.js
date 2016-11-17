@@ -20,10 +20,7 @@ function getAllReceta(req, res, next){
 	.then(function(data){
 		res.status(200)//mandar esa informacion en archivo json
 		.json({
-			status: 'Exitoso',
-			data: data,
-			message: 'Recuperados todos los menus'
-		});
+			data: data
 
 	})
 	.catch(function(err){
@@ -40,9 +37,7 @@ function createReceta(req, res, next){
 	.then(function(data){
 	res.status(200)
 	.json({
-		status: 'Exitoso',
-		data: data,
-		message: 'Insertado una receta'
+		data: data
 	});
 	})
 	.catch(function(err){
@@ -58,9 +53,7 @@ function removeReceta(req, res, next){
 	.then(function(){
 	res.status(200)
 	.json({
-		status: 'Exitoso',
-		data: data,
-		message: 'Removida una receta'
+		data: data
 	});
 	})
 	.catch(function(err){

@@ -20,9 +20,7 @@ function getAllInfoReceta(req, res, next){
 	.then(function(data){
 		res.status(200)//mandar esa informacion en archivo json
 		.json({
-			status: 'Exitoso',
 			data: data,
-			message: 'Recuperadas las recetas'
 		});
 
 	})
